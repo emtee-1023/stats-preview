@@ -1,0 +1,179 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 0;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    width: 80vw;
+    max-width: 295px;
+    height: 700px;
+}
+
+.img-container {
+    width: 100%;
+    height: 32%;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 54%, 48%, 0.548);
+    z-index: 1;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.mobile-img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading {
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    text-align: center;
+    margin: 5px 25px;
+}
+
+.heading b {
+    color: hsl(277, 64%, 61%);
+    font-size: 25px;
+}
+
+.main-paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0px 20px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    
+}
+
+.services .total-number, .services .description {
+    text-align: center;
+}
+
+.services .total-number {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    
+}
+
+.services .description {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 500;
+    font-size: 0.6rem;
+    margin-top: 5px;
+    letter-spacing: 2px; 
+}
+
+.attribution { 
+    margin-bottom: 35px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a { 
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (min-width: 1100px) {
+    
+    .card {
+        margin-top: 100px;
+        flex-direction: row-reverse;
+        max-width: 1000px;
+        height: 65vh;
+    }
+    
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .img-container {
+        height: 100%;
+        width: 950px;
+    }
+
+    .content-container {
+        gap: 20px;
+    }
+
+    .heading {
+        text-align: left;
+        font-size: 2rem;
+        margin-top: 60px;
+        margin-left: 55px;
+    }
+
+    .heading b {
+        font-size: 2rem;
+    }
+
+    .main-paragraph {
+        text-align: left;
+        margin-top: 5px;
+        margin-left: 55px;
+    }
+
+    .services-section {
+        flex-direction: row;
+        margin-top: 40px;
+        margin-left: 55px;
+        gap: 70px;
+    }
+
+    .services .total-number, .services .description {
+        text-align: left;
+    }
+    
+
+}
