@@ -137,6 +137,7 @@ main.card {
         flex-direction: row-reverse;
         max-width: 1000px;
         height: 65vh;
+        max-height: 600px;
     }
     
     .mobile-img {
